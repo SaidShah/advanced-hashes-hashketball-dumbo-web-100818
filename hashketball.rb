@@ -143,7 +143,9 @@ def player_by_number(player_number)
   game_hash.each do |where, stats|
     stats.each do |location, location_stats|
       if location == :players
-      
+        location_stats.each do |player_name, player_stats|
+          binding.pry
+      end
     end
    end
   end
