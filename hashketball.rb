@@ -140,8 +140,11 @@ end
 
 def player_by_number(player_number) 
   
-  
-  
+  game_hash.each do |where, stats|
+    stats.each do |location, location_stats|
+      binding.pry
+   end
+  end
 end
 
 player_by_number(33)
