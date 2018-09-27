@@ -144,7 +144,9 @@ def player_by_number(player_number)
     stats.each do |location, location_stats|
       if location == :players
         location_stats.each do |player_name, player_stats|
-          binding.pry
+          if player_stats[:number]== player_number
+            p player_name
+          end
       end
     end
    end
